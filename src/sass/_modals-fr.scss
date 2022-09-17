@@ -36,7 +36,7 @@ h6 {
         width: 480px;
     }
 
-    @media screen and (min-width:768px) {
+    @include tablet {
         width: 568px;
         padding: 32px 60px;
     }
@@ -61,7 +61,7 @@ h6 {
     
         color: #131313;
         margin-bottom: 20px;
-        @media screen and (min-width:768px) {
+        @include tablet {
             width: 322px;
             font-size: 20px;
             line-height: 1.4;
@@ -79,7 +79,7 @@ h6 {
         line-height: 1.4;
         color: #131313;
         margin-bottom: 20px;
-        @media screen and (min-width:768px) {
+        @include tablet {
             width: 448px;
             font-size: 16px;
             margin-bottom: 32px;
@@ -94,7 +94,7 @@ h6 {
         align-items: center;
         justify-content: center;
         gap: 12px;
-        @media screen and (min-width:768px) {
+        @include tablet {
             gap: 16px;
         }
     }
@@ -114,11 +114,11 @@ h6 {
             font-size: 12px;
             line-height: 1.4;
             color: #131313;
-            @media screen and (min-width:768px) {
+            @include tablet {
                     font-size: 14px;
                 }
         }
-        @media screen and (min-width:768px) {
+        @include tablet {
             height: 42px;
         }
     }
@@ -140,11 +140,11 @@ h6 {
             font-size: 12px;
             line-height: 1.4;
             color: #131313;
-            @media screen and (min-width:768px) {
+            @include tablet {
                 font-size: 14px;
                 }
         }
-        @media screen and (min-width:768px) {
+        @include tablet {
             margin-bottom: 16px;
             height: 84px;
         }
@@ -183,7 +183,7 @@ h6 {
             width: 121px;
         }
 
-        @media screen and (min-width:768px) {
+        @include tablet {
             font-size: 14px;
             line-height: 1.2;
         }
