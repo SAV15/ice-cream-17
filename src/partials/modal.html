@@ -1,0 +1,39 @@
+<!-- <button type="button" class="" data-modal-loc-open>OPEN Loc</button> -->
+<div class="md-backdrop md-is-hidden" data-modal-loc>
+  <div class="modal-loc">
+    <button type="modal-btn" class="modal-btn__close" data-modal-loc-close>
+      <svg class="modal__x" width="16" height="16">
+        <use href="./images/svg/symbol-defs.svg#close"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Our Locations</p>
+    <picture class="img-location">
+      <source
+        srcset="
+          ./images/img-modal/location-modal-desk-1x-min.jpg 1x,
+          ./images/img-modal/location-modal-desk-2x-min.jpg 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/img-modal/location-modal-tel-1x-min.jpg 1x,
+          ./images/img-modal/location-modal-tel-2x-min.jpg 2x
+        "
+        media="(max-width:767px)"
+      />
+      <img
+        srcset="
+          ./images/img-modal/location-modal-tel-1x-min.jpg 1x,
+          ./images/img-modal/location-modal-tel-2x-min.jpg 2x
+        "
+        alt="map"
+      />
+    </picture>
+    <a href="https://goo.gl/maps/kHEUH2ysdG3e8zPK7" class="modal-loc__link"
+      >Open map</a
+    >
+  </div>
+</div>
+
+<!-- <script src="./js/modal-loc.js"></script> -->
