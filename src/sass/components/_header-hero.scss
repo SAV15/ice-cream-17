@@ -14,10 +14,6 @@
     (min-resolution: 2dppx) {
     background-image: url(../images/svg/hero-header-image/bg-image-mobile_x2.png);
     }
-
-    @media screen and (min-width: 768px) {
-        background-image: url(../images/svg/hero-header-image/bg-image-tablet_x1.png)
-    }
 }
 
 .menu-logo-box {
@@ -199,7 +195,7 @@
 }
 
 .sale-area__item {
-    display: flex;
+    display: flexdescription;
     flex-direction: column;
     gap: 4px;
 }
@@ -215,12 +211,12 @@
 .hero-description {
     display: none;
 
-    margin-left: 222px;
-    margin-bottom: 31px;
+    margin-left: 190px;
+    margin-top: 40px;
 
     width: 160px;
 
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.42;
 
     color: $white-color;
@@ -228,6 +224,54 @@
 
 .hero-description__icon {
     margin-top: 20px;
+}
+
+.hero-description__icon--default,
+.hero-description__icon--hover,
+.hero-description__icon--focus{
+    fill: $white-color;
+}
+
+.hero-description__icon--hover {
+    opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-description__icon--focus {
+    opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-description:hover .hero-description__icon--hover{
+    opacity: 1;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-description:hover .hero-description__icon--default{
+    opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-description:focus .hero-description__icon--hover{
+    opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-description:focus .hero-description__icon--default{
+    opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-description:focus .hero-description__icon--focus{
+    opacity: 1;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product {
@@ -320,7 +364,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        top: 15%;
+        top: 12%;
         left: 42%;
     }
 
@@ -372,8 +416,18 @@ img {
     }
 
     .main-text {
+        width: 183px;
+
         margin-bottom: 20px;
         margin-top: 40px;
+
+        font-size: 18px;
+        line-height: 1.27;
+    }
+
+    .main-text--bigger {
+        font-size: 24px;
+        line-height: 0.54;
     }
 
     .sale-area {
@@ -386,7 +440,20 @@ img {
     }
 
     .plate-image {
-    display: block;
+        position: absolute;
+        left: 35px;
+        bottom: 14px;
+        display: block;
+    }
+
+    .header__container {
+        background-image: url(../images/svg/hero-header-image/bg-image-tablet_x1.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/svg/hero-header-image/bg-image-tablet_x2.png);
+        }
     }
 }
 
@@ -410,5 +477,13 @@ img {
 
     .header__container {
         height: 664px;
+
+        background-image: url(../images/svg/hero-header-image/bg-image-desktop_x1.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/svg/hero-header-image/bg-image-desktop_x2.png);
+        }
     }
 }
