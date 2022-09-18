@@ -1,0 +1,82 @@
+.container{
+    width: auto;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.footer {
+    width: 100%;
+    background:($main-color);
+    padding-top: 38.9px;
+}
+
+.footer__first {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+    color: ($white-color);
+    margin-bottom: 16px;
+    
+}
+
+.footer__second {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.20;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: ($white-color);
+    margin-bottom: 42px;
+    
+}
+
+.footer__item {
+    display: flex;
+    gap: 27.24px;
+
+    justify-content: end;
+
+    margin-bottom: 27px;
+}
+
+.icons__link {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    border-radius: 50%;
+    background-color:($how-its-made-yellow1);
+}
+.icons__svg{
+    fill: #82a075;
+}
+.footer__contact {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+
+    text-align: end;
+    text-decoration: none;
+
+    margin-bottom: 40px;
+}
+.contact__tel{
+    color:($white-color);
+    text-decoration: none;
+}
+
+.footer__right{
+    text-align: center;
+    font-weight: 700;
+font-size: 14px;
+line-height: 1.52;
+color: #7A7A7A;
+
+padding-bottom: 62px;
+
+}
+
+.footer__box{
+    padding-top: 16px;
+    border-top: 1px solid tomato; 
+}
