@@ -16,7 +16,7 @@ $main-font: 'Montserrat', sans-serif;
 $secondary-font: 'Seymour One', sans-serif;
 $third-font: 'Roboto', sans-serif;
 
-//
+// classes
 
 .container {
   width: 100%;
@@ -25,14 +25,17 @@ $third-font: 'Roboto', sans-serif;
 
   @include mobile {
     width: 480px;
+    padding: 0 20px;
   }
 
   @include tablet {
     width: 768px;
+    padding: 0 32px;
   }
 
   @include desktop {
     width: 1200px;
+    padding: 0 16px;
   }
 }
 
