@@ -16,15 +16,15 @@ $main-font: 'Montserrat', sans-serif;
 $secondary-font: 'Seymour One', sans-serif;
 $third-font: 'Roboto', sans-serif;
 
-//
+// classes
 
 .container {
-  padding: 0 20px;
   margin: 0 auto;
   width: 100%;
 
   @include mobile {
     width: 480px;
+    padding: 0 20px;
   }
 
   @include tablet {
