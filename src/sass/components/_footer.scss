@@ -1,4 +1,4 @@
-.container{
+.container {
     width: auto;
     padding: 0px 20px;
     margin: 0 auto;
@@ -6,8 +6,12 @@
 
 .footer {
     width: 100%;
-    background:($main-color);
+    background: ($main-color);
     padding-top: 38.9px;
+}
+
+.tittle {
+    margin-bottom: 42px;
 }
 
 .footer__first {
@@ -16,8 +20,8 @@
     line-height: 1.22;
     text-transform: uppercase;
     color: ($white-color);
-    margin-bottom: 16px;
-    
+    padding-bottom: 16px;
+
 }
 
 .footer__second {
@@ -27,17 +31,15 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: ($white-color);
-    margin-bottom: 42px;
-    
 }
-
+.item{
+    margin-bottom: 27px;
+}
 .footer__item {
     display: flex;
-    gap: 27.24px;
+    gap: 28px;
 
     justify-content: end;
-
-    margin-bottom: 27px;
 }
 
 .icons__link {
@@ -45,38 +47,45 @@
     height: 32px;
     display: flex;
     border-radius: 50%;
-    background-color:($how-its-made-yellow1);
+    background-color: ($how-its-made-yellow1);
 }
-.icons__svg{
+
+.icons__svg {
     fill: #82a075;
 }
-.footer__contact {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.86;
 
+.contact {
     text-align: end;
     text-decoration: none;
 
     margin-bottom: 40px;
 }
-.contact__tel{
-    color:($white-color);
+
+.contact__text{
+    font-weight: 700;
+font-size: 12px;
+line-height: 1.86;
+}
+
+.contact__tel {
+    color: ($white-color);
     text-decoration: none;
 }
 
-.footer__right{
+.right {
     text-align: center;
-    font-weight: 700;
-font-size: 14px;
-line-height: 1.52;
-color: #7A7A7A;
 
-padding-bottom: 62px;
-
+    padding-bottom: 62px;
 }
 
-.footer__box{
+.right__text{
+    font-weight: 700;
+ font-size: 14px;
+ line-height: 1.52;
+ color: #7A7A7A; 
+}
+
+.box {
     padding-top: 16px;
     border-top: 1px solid ($white-color)
 }
