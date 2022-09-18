@@ -1,0 +1,38 @@
+.products {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  outline: #aec6a5;
+}
+
+.title-wrap {
+  padding-left: 5px;
+  padding-right: 5px;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $secondary-font;
+  color: $black-color;
+
+  margin-bottom: 40px;
+}
+
+.products__pre-title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+
+  margin-bottom: 12px;
+}
+
+.products-title {
+  font-size: 30px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  margin-top: 0;
+}
+
+.item-wrap {
+  border-radius: 24px;
+  text-align: center;
+  background-color: #aec6a5;
+}
