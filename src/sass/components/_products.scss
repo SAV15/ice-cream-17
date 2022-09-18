@@ -5,6 +5,7 @@
 }
 
 .title-wrap {
+  width: 100%;
   padding-left: 5px;
   padding-right: 5px;
 
@@ -13,7 +14,7 @@
   font-family: $secondary-font;
   color: $black-color;
 
-  margin-bottom: 40px;
+  margin-bottom: 148px;
 }
 
 .products__pre-title {
@@ -24,6 +25,10 @@
   margin-bottom: 12px;
 }
 
+.products-item {
+  margin-bottom: 164px;
+}
+
 .products-title {
   font-size: 30px;
   line-height: 1.27;
@@ -32,7 +37,51 @@
 }
 
 .item-wrap {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 123px;
+  padding-left: 40px;
+  padding-right: 40px;
+
   border-radius: 24px;
   text-align: center;
   background-color: #aec6a5;
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 201px;
+    height: 211px;
+    box-shadow: 0 15px 20px -5px rgba(10, 136, 23, 0.25);
+    background-image: url(/src/images/products/item-before1-mob.png);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+}
+
+.item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $black-color;
+  margin-bottom: 40px;
+}
+
+.item-text {
+  text-align: center;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  margin-bottom: 90px;
+}
+
+.product-btn {
+  margin-bottom: 20px;
 }
