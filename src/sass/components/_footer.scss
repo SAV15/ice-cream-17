@@ -1,17 +1,40 @@
-.container {
-    width: auto;
-    padding: 0px 20px;
-    margin: 0 auto;
-}
-
 .footer {
     width: 100%;
     background: ($main-color);
     padding-top: 38.9px;
+
+    @include tablet {
+        padding-top: 40px;
+    }
+
+    @include desktop {
+        padding-top: 120px;
+    }
+}
+
+.special {
+    @include tablet {
+        display: flex;
+    }
 }
 
 .tittle {
     margin-bottom: 42px;
+    max-width: 232px;
+    margin-left: 0;
+    height: 100%;
+
+    @include tablet {
+        width: 100%;
+        max-width: 358px;
+        margin-left: 0;
+    }
+
+    @include desktop {
+        width: 100%;
+        max-width: 504px;
+        margin-bottom: 54px;
+    }
 }
 
 .footer__first {
@@ -22,6 +45,19 @@
     color: ($white-color);
     padding-bottom: 16px;
 
+    @include tablet {
+        font-size: 26px;
+        line-height: 1.22;
+        padding-bottom: 9px;
+    }
+
+    @include desktop {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.23;
+        padding-bottom: 14px;
+    }
+
 }
 
 .footer__second {
@@ -31,10 +67,32 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: ($white-color);
+
+    @include tablet {
+        font-size: 48px;
+        line-height: 1.23;
+    }
+
+    @include desktop {
+        font-size: 58px;
+        line-height: 1.22;
+    }
 }
 
 .item {
-    margin-bottom: 27px;
+    margin-bottom: 38px;
+
+    @include tablet {
+        padding-top: 68px;
+        padding-bottom: 56px;
+        margin-right: 0px;
+    }
+
+    @include desktop {
+        padding-bottom: 0px;
+        padding-top: 12px;
+        margin-bottom: 60px;
+    }
 }
 
 .footer__item {
@@ -48,25 +106,44 @@
     width: 32px;
     height: 32px;
     display: flex;
+    align-items: center;
     border-radius: 50%;
     background-color: ($how-its-made-yellow1);
+
+    @include tablet {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+.icons {
+    margin-bottom: 38px;
 }
 
 .icons__svg {
     fill: #82a075;
+    width: 32px;
+    height: 32px;
+
+    @include tablet {
+        width: 34px;
+        height: 34px;
+    }
 }
 
 .contact {
     text-align: end;
     text-decoration: none;
-
-    margin-bottom: 40px;
 }
 
 .contact__text {
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86;
+
+    @include tablet {
+        font-size: 14px;
+    }
 }
 
 .contact__tel {
@@ -77,10 +154,14 @@
 .right {
     text-align: center;
 
-    padding-bottom: 62px;
+    @include tablet {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .right__text {
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
@@ -89,11 +170,16 @@
 
 .box {
     padding-top: 16px;
-    border-top: 1px solid ($white-color)
-}
+    padding-bottom: 62px;
+    border-top: 1px solid ($white-color);
 
+    @include tablet {
+        padding-top: 14px;
+        padding-bottom: 13px;
+    }
 
-.span__text{
-    text-align: center;
-    margin-left: 40px;
+    @include desktop {
+        padding-top: 11px;
+        padding-bottom: 12px;
+    }
 }
