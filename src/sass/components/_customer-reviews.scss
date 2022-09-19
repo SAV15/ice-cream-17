@@ -14,23 +14,29 @@
   text-align: center;
   
 }
-.cus__blok{
-  width: 280px;
-  height: 256px;
-  background-color: #84A178;
-  border-radius: 10px;
-  margin-top: 32px;
+// .cus__blok{
+//   width: 280px;
+//   height: 256px;
+//   background-color: #84A178;
+//   border-radius: 10px;
+//   margin-top: 32px;
 
   
-}
+// }
 .customer__text{
-  
+  max-width: 280px;
+  height: 256px;
+  background-color: #84A178;
   font-weight: 400;
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
   color: #FCFCFC;
   padding: 34px 39px;
+  border-radius: 10px;
+  margin-top: 32px;
+  
+  
 }
 .customer__title{
   font-weight: 500;
@@ -42,7 +48,7 @@
   }
 .swiper {
   
-  width: 400px;
+  width: 100%;
   height: 100%;
 }
 .swiper-pagination-bullet{
