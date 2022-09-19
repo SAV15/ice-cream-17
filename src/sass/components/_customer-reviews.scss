@@ -1,14 +1,49 @@
 .customer-reviews{
-  background-image: url(/src/images/svg/Мороженое\ фон.png);
+  background-image: url(/src/images/svg/PNG/cr/Мороженое\ фон.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  padding-top: 186px;
+  padding-top: 80px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 48px;
 }
+
+
+.customer__item{
+  text-align: center;
+  
+}
+.cus__blok{
+  width: 280px;
+  height: 256px;
+  background-color: #84A178;
+  border-radius: 10px;
+  margin-top: 32px;
+
+  
+}
+.customer__text{
+  
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  color: #FCFCFC;
+  padding: 34px 39px;
+}
+.customer__title{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: center;
+  color: #131313;
+  margin-top: 30px;
+  }
 .swiper {
   
   width: 400px;
-  height: 200px;
+  height: 100%;
 }
 .swiper-pagination-bullet{
   background-color: #84A178;
@@ -17,4 +52,8 @@
 }
 .swiper-pagination-bullet-active {
   background-color: #84A178;
+}
+.swiper-pagination{
+  position: relative;
+  margin-top: 14px;
 }
