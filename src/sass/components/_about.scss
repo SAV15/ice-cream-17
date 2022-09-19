@@ -1,0 +1,60 @@
+.about {
+  background-color: $main-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container {
+}
+.about__label {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+
+  color: $white-color;
+}
+.about__title {
+  font-family: $secondary-font;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+  margin-bottom: 38px;
+}
+.cow {
+  margin-bottom: 40px;
+}
+.cow__img {
+}
+.about__text {
+  font-family: $main-font;
+  font-size: 12px;
+  line-height: 1.76;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #fcfcfc;
+}
+.about__button {
+  margin-top: 20px;
+  background: #f8d24e;
+  border-radius: 10px;
+  border: none;
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+  padding: 12px 34px;
+}
+.about__arrow {
+  margin-left: 5px;
+}
