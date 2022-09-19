@@ -1,7 +1,29 @@
 .products {
+  position: relative;
+
   margin-top: 60px;
   margin-bottom: 60px;
-  outline: #aec6a5;
+}
+.backdrop-first {
+  position: absolute;
+  top: -60px;
+  width: 100%;
+  height: 700px;
+  z-index: -1;
+}
+
+.backdrop-second {
+  position: absolute;
+  top: 644px;
+  width: 100%;
+  height: 640px;
+}
+
+.backdrop-third {
+  position: absolute;
+  top: 1286px;
+  width: 100%;
+  height: 740px;
 }
 
 .title-wrap {
@@ -46,7 +68,6 @@
 
   border-radius: 24px;
   text-align: center;
-  background-color: #aec6a5;
 
   &::before {
     content: ' ';
@@ -57,10 +78,56 @@
     display: block;
     width: 201px;
     height: 211px;
-    box-shadow: 0 15px 20px -5px rgba(10, 136, 23, 0.25);
-    background-image: url(/src/images/products/item-before1-mob.png);
     background-repeat: no-repeat;
     border-radius: 50%;
+  }
+}
+
+.item-first {
+  background-color: #aec6a5;
+
+  &::before {
+    content: ' ';
+    box-shadow: 0 15px 20px -5px rgba(10, 136, 23, 0.25);
+    background-image: url(/src/images/products/item-before1-mob.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/item-before1-mob-2x.png);
+      background-size: contain;
+    }
+  }
+}
+
+.item-second {
+  background-color: #efd478;
+
+  &::before {
+    content: ' ';
+    box-shadow: 0 15px 20px -5px rgba(212, 176, 51, 0.7);
+    background-image: url(/src/images/products/item-before2-mob.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/item-before2-mob-2x.png);
+      background-size: contain;
+    }
+  }
+}
+
+.item-third {
+  background-color: #d6936d;
+
+  &::before {
+    content: ' ';
+    box-shadow: 0 15px 20px -5px rgba(137, 87, 58, 0.7);
+    background-image: url(/src/images/products/item-before3-mob.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/item-before3-mob-2x.png);
+      background-size: contain;
+    }
   }
 }
 
