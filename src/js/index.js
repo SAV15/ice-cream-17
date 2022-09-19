@@ -1,1 +1,1 @@
-include("./modal-loc.js");
+import ("./modal-loc.js");
