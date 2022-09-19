@@ -2,8 +2,13 @@
   background-color: $main-color;
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
-.container {
+.about__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .about__label {
   font-family: $main-font;
@@ -31,11 +36,17 @@
   margin-bottom: 40px;
 }
 .cow__img {
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.about__description {
+  width: 220px;
 }
 .about__text {
   font-family: $main-font;
   font-size: 12px;
-  line-height: 1.76;
+  line-height: 1.58;
   text-align: center;
   letter-spacing: 0.04em;
 
