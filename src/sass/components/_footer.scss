@@ -32,9 +32,11 @@
     text-transform: uppercase;
     color: ($white-color);
 }
-.item{
+
+.item {
     margin-bottom: 27px;
 }
+
 .footer__item {
     display: flex;
     gap: 28px;
@@ -61,10 +63,10 @@
     margin-bottom: 40px;
 }
 
-.contact__text{
+.contact__text {
     font-weight: 700;
-font-size: 12px;
-line-height: 1.86;
+    font-size: 12px;
+    line-height: 1.86;
 }
 
 .contact__tel {
@@ -78,14 +80,20 @@ line-height: 1.86;
     padding-bottom: 62px;
 }
 
-.right__text{
+.right__text {
     font-weight: 700;
- font-size: 14px;
- line-height: 1.52;
- color: #7A7A7A; 
+    font-size: 14px;
+    line-height: 1.52;
+    color: #7A7A7A;
 }
 
 .box {
     padding-top: 16px;
     border-top: 1px solid ($white-color)
+}
+
+
+.span__text{
+    text-align: center;
+    margin-left: 40px;
 }
