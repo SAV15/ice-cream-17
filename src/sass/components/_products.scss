@@ -8,22 +8,22 @@
   position: absolute;
   top: -60px;
   width: 100%;
-  height: 700px;
+  height: 740px;
   z-index: -1;
 }
 
 .backdrop-second {
   position: absolute;
-  top: 644px;
+  top: 640px;
   width: 100%;
   height: 640px;
 }
 
 .backdrop-third {
   position: absolute;
-  top: 1286px;
+  top: 1290px;
   width: 100%;
-  height: 740px;
+  height: 720px;
 }
 
 .title-wrap {
@@ -47,15 +47,15 @@
   margin-bottom: 12px;
 }
 
-.products-item {
-  margin-bottom: 164px;
-}
-
 .products-title {
   font-size: 30px;
   line-height: 1.27;
   letter-spacing: 0.04em;
   margin-top: 0;
+}
+
+.products-item:not(:last-child) {
+  margin-bottom: 164px;
 }
 
 .item-wrap {
@@ -151,4 +151,16 @@
 
 .product-btn {
   margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 20px;
+}
+
+.product-btn:hover svg {
+  transform: scale(1.15);
+}
+
+.product-btn:focus svg {
+  transform: scale(1.3);
 }
