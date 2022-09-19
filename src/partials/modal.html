@@ -36,4 +36,84 @@
   </div>
 </div>
 
+<div class="md-backdrop md-is-hidden" data-modal-buy>
+  <div class="modal-buy">
+    <button type="modal-btn" class="modal-btn__close" data-modal-buy-close>
+      <svg class="modal__x" width="16" height="16">
+        <use href="./images/svg/symbol-defs.svg#close"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Buy now</p>
+    <form class="modal-checkbox">
+      <li class="modal-check">
+        <label class="modal-checkbox__title">
+          <input class="modal-checkbox__hidden" type="checkbox" name="topic" value="ice cream">
+          <picture class="img-modal-checkbox">
+      <source
+        srcset="
+        ./images/img-modal/buy-modal-icecrema-desk-1x-min.jpg 1x,
+        ./images/img-modal/buy-modal-icecrema-desk-2x-min.jpg 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="./images/img-modal/buy-modal-icecrema-tel-1x-min.jpg 1x,
+          ./images/img-modal/buy-modal-icecrema-tel-1x-min.jpg 2x
+        "
+        media="(max-width:767px)"
+      />
+      <img
+        srcset="
+          ./images/img-modal/buy-modal-icecrema-tel-1x-min.jpg 1x,
+          ./images/img-modal/buy-modal-icecrema-tel-1x-min.jpg 2x
+        "
+        alt="icecrema"
+      />
+    </picture>
+        
+        ice cream
+        </label>
+      </li>
+    </form>
+    <form class="modal-form">
+      <div class="form-name">
+        <input
+            type="text"
+            class="modal-form__list"
+            name="name"
+            pattern="Name"
+            placeholder=" "
+          />
+        <label for="name" class="modal-form__title">
+          Name
+        </label>
+      </div>
+      <div class="form-phone">
+        <input
+            type="text"
+            class="modal-form__list"
+            name="phone"
+            pattern="phone"
+            placeholder=" "
+          />
+        <label for="phone" class="modal-form__title">
+          Phone
+        </label>
+      </div>
+      <div class="form-comment">           
+          <textarea
+            name="comment"
+            id="comment"
+            class="modal-form__list modal-area"
+            pattern="comment"
+            placeholder=" "
+          ></textarea>
+          <label for="comment" class="modal-form__title">
+          Comment
+        </label>
+      </div>  
+    <button type="submit" class="btn-send">Submit</button>
+  </div>
+</div>
+
 <!-- <script src="./js/modal-loc.js"></script> -->
