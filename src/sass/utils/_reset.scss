@@ -18,11 +18,25 @@ p {
 }
 
 ul {
-  padding-left: 0px;
+  padding-left: 0;
   margin: 0;
   list-style: none;
 }
 
+img {
+  display: block;
+  height: auto;
+}
+
 .button {
   cursor: pointer;
+}
+
+a {
+  font-style: normal;
+  text-decoration: none;
+}
+
+section {
+  display: block;
 }
