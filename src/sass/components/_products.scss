@@ -10,6 +10,13 @@
     background-size: cover;
     padding-bottom: 82px;
   }
+
+  @include desktop {
+    background-image: url(/src/images/products/item-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 57px;
+  }
 }
 
 .backdrop-first {
@@ -47,10 +54,6 @@
 }
 
 .title-wrap {
-  width: 100%;
-  padding-left: 5px;
-  padding-right: 5px;
-
   text-align: center;
   text-transform: uppercase;
   font-family: $secondary-font;
@@ -61,9 +64,15 @@
   @include tablet {
     margin-bottom: 200px;
   }
+
+  @include desktop {
+    margin-bottom: 304px;
+  }
 }
 
 .products__pre-title {
+  font-family: $main-font;
+  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.22;
@@ -72,6 +81,11 @@
 
   @include tablet {
     font-size: 22px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -84,6 +98,12 @@
   @include tablet {
     font-size: 34px;
   }
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+  }
 }
 
 .product-list {
@@ -92,12 +112,23 @@
     gap: 16px;
     justify-content: center;
   }
+
+  @include desktop {
+    gap: 32px;
+    justify-content: space-between;
+  }
 }
 
 .products-item:not(:last-child) {
   margin-bottom: 164px;
   @include tablet {
     margin-bottom: 0;
+  }
+}
+
+.products-item {
+  @include desktop {
+    width: calc((100% - 24px) / 3);
   }
 }
 
@@ -128,12 +159,24 @@
       width: 200px;
       height: 208px;
     }
+
+    @include desktop {
+      width: 302px;
+      height: 318px;
+    }
   }
 
   @include tablet {
     width: 224px;
     padding-left: 26px;
     padding-right: 26px;
+  }
+
+  @include desktop {
+    width: 100%;
+    padding-top: 188px;
+    padding-left: 63px;
+    padding-right: 63px;
   }
 }
 
@@ -159,6 +202,16 @@
         background-size: contain;
       }
     }
+
+    @include desktop {
+      background-image: url(/src/images/products/item-before1.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/products/item-before1-2x.png);
+        background-size: contain;
+      }
+    }
   }
 }
 
@@ -181,6 +234,15 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: url(/src/images/products/item-before2-tab-2x.png);
+        background-size: contain;
+      }
+    }
+    @include desktop {
+      background-image: url(/src/images/products/item-before2.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/products/item-before2-2x.png);
         background-size: contain;
       }
     }
@@ -212,6 +274,15 @@
         background-position: 50% 50%;
       }
     }
+    @include desktop {
+      background-image: url(/src/images/products/item-before3.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/products/item-before3-2x.png);
+        background-size: contain;
+      }
+    }
   }
 }
 
@@ -230,14 +301,25 @@
     font-size: 22px;
     line-height: 1.23;
   }
+  @include desktop {
+    font-size: 30px;
+    margin-bottom: 65px;
+  }
 }
 
 .item-text {
+  font-family: $main-font;
+  font-style: normal;
   text-align: center;
   line-height: 1.76;
   letter-spacing: 0.04em;
   margin-bottom: 90px;
   height: 145px;
+
+  @include desktop {
+    font-size: 16px;
+    margin-bottom: 46px;
+  }
 }
 
 .product-btn {
@@ -246,6 +328,10 @@
   border: none;
   width: 48px;
   height: 20px;
+
+  @include desktop {
+    margin-bottom: 48px;
+  }
 }
 
 .product-btn:hover svg {
