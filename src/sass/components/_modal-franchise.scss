@@ -4,7 +4,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     // width: 528px;
-    width: 100%;
+    width: calc(100% - 40px);
+    max-height: 674px;
     background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
@@ -13,7 +14,7 @@
     padding: 28px;
 
     @media screen and (min-width:480px) {
-        width: 480px;
+        width: 440px;
     }
 
     @include tablet {
@@ -33,9 +34,12 @@
         top: 12px;
         width: 30px;
         height: 30px;
-        border: 1px solid $white-color;
-        border-radius: 50%;
-        background-color: $white-color;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__svg {
