@@ -19,6 +19,12 @@
   }
 }
 
+.container {
+  @include desktop {
+    padding: 0 12px;
+  }
+}
+
 .backdrop-first {
   position: absolute;
   top: 0;
@@ -115,7 +121,7 @@
 
   @include desktop {
     gap: 32px;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
@@ -127,14 +133,15 @@
 }
 
 .products-item {
+  width: 100%;
+
   @include desktop {
-    width: calc((100% - 24px) / 3);
+    width: 370px;
   }
 }
 
 .item-wrap {
   position: relative;
-  width: 280px;
   margin: 0 auto;
   padding-top: 123px;
   padding-left: 40px;
@@ -164,6 +171,10 @@
       width: 302px;
       height: 318px;
     }
+  }
+
+  @include mobile {
+    width: 280px;
   }
 
   @include tablet {
