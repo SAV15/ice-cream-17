@@ -12,19 +12,21 @@
     }
 }
 
-.special {
+.footer__special {
     margin-bottom: 38px;
+
     @include tablet {
         display: flex;
         margin-bottom: 56px;
     }
-    @include desktop{
+
+    @include desktop {
         margin-bottom: 60px;
     }
 
 }
 
-.tittle {
+.footer__tittle {
     max-width: 232px;
     margin-left: 0;
     height: 100%;
@@ -84,8 +86,9 @@
     }
 }
 
-.item {
-margin-top: 42px;
+.footer__itm {
+    margin-top: 42px;
+
     @include tablet {
         margin-top: 68px;
         margin-left: auto;
@@ -104,7 +107,7 @@ margin-top: 42px;
     justify-content: end;
 }
 
-.icons__link {
+.footer__icons-link {
     width: 32px;
     height: 32px;
     display: flex;
@@ -118,18 +121,19 @@ margin-top: 42px;
     }
 }
 
-.icons {
+.footer__icons {
     margin-bottom: 38px;
-    
-    @include tablet{
+
+    @include tablet {
         margin-bottom: 39px;
     }
-    @include desktop{
+
+    @include desktop {
         margin-bottom: 40px;
     }
 }
 
-.icons__svg {
+.footer__icons-svg {
     fill: #82a075;
     width: 32px;
     height: 32px;
@@ -140,30 +144,30 @@ margin-top: 42px;
     }
 }
 
-.contact {
+.footer__contact {
     text-align: end;
     text-decoration: none;
 }
 
-.contact__text {
-    font-weight: 700;
+.footer__contact-text {
     font-size: 12px;
+    font-weight: 700;
     line-height: 1.86;
-
     @include tablet {
         font-size: 14px;
     }
+
     @include desktop {
         font-size: 16px;
     }
 }
 
-.contact__tel {
+.footer__contact-tel {
     color: ($white-color);
     text-decoration: none;
 }
 
-.right {
+.footer__right {
     text-align: center;
 
     @include tablet {
@@ -172,19 +176,19 @@ margin-top: 42px;
     }
 }
 
-.right__text {
+.footer__right-text {
     text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     color: #7A7A7A;
 
-    @include desktop{
+    @include desktop {
         font-size: 12px;
     }
 }
 
-.box {
+.footer__box {
     padding-top: 16px;
     padding-bottom: 62px;
     border-top: 1px solid ($white-color);
