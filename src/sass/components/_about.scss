@@ -4,11 +4,32 @@
   padding-bottom: 60px;
   text-align: center;
 }
+.about__headline {
+  width: 210px;
+  margin-bottom: 38px;
+  @include tablet {
+    width: 454px;
+    margin-bottom: 74px;
+  }
+  @include desktop {
+    width: 671px;
+    margin-bottom: 84px;
+  }
+}
+.container {
+  box-sizing: border-box;
+}
 .about__container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: start;
+    justify-content: space-around;
+  }
 }
 .about__label {
   font-family: $main-font;
@@ -30,29 +51,103 @@
   text-transform: uppercase;
 
   color: #fcfcfc;
-  margin-bottom: 38px;
 }
 .cow {
+  // background: linear-gradient(
+  //     0deg,
+  //     rgba(248, 210, 78, 0.7),
+  //     rgba(248, 210, 78, 0.7)
+  //   ),
+  //   #d9d9d9;
+  // box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+  // border-radius: 165.879px;
+  width: 280px;
   margin-bottom: 40px;
+  @include tablet {
+    width: 336px;
+    // margin-right: 32px;
+  }
+  @include desktop {
+    width: 500px;
+    // margin-right: 100px;
+  }
 }
 .cow__img {
-  border: none;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.about__description {
-  width: 220px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 280px;
+  @include tablet {
+    width: 336px;
+  }
+  @include desktop {
+    width: 500px;
+  }
+  // border: none;
+  // border-radius: 50%;
+  // overflow: hidden;
 }
 .about__text {
   font-family: $main-font;
   font-size: 12px;
-  line-height: 1.58;
+  line-height: 1.75;
   text-align: center;
   letter-spacing: 0.04em;
 
   color: #fcfcfc;
+  @include tablet {
+    text-align: start;
+  }
+}
+.about__description {
+  width: 220px;
+  @include tablet {
+    width: 334px;
+    margin-bottom: 8px;
+  }
+  @include desktop {
+    width: 463px;
+  }
+}
+.about__choose {
+  display: none;
+  @include tablet {
+    display: block;
+    width: 334px;
+    font-family: $main-font;
+    font-size: 12px;
+    line-height: 1.92;
+    letter-spacing: 0.04em;
+    color: #fcfcfc;
+  }
+  @include desktop {
+    width: 463px;
+  }
+}
+.about__section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    align-items: flex-start;
+    text-align: start;
+  }
+}
+
+.about__desc {
+  font-family: $main-font;
+
+  font-size: 12px;
+  line-height: 1.58;
+  text-align: center;
+
+  color: #fcfcfc;
+  @include tablet {
+    text-align: start;
+  }
 }
 .about__button {
+  width: 164px;
   margin-top: 20px;
   background: #f8d24e;
   border-radius: 10px;
@@ -61,11 +156,12 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
-  align-items: center;
-  text-align: center;
   color: #131313;
-  padding: 12px 34px;
+  padding: 12px 30px 12px 34px;
+  @include tablet {
+    margin-top: 48px;
+  }
 }
 .about__arrow {
-  margin-left: 5px;
+  margin-left: 4px;
 }
