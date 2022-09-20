@@ -13,13 +13,18 @@
 }
 
 .special {
+    margin-bottom: 38px;
     @include tablet {
         display: flex;
+        margin-bottom: 56px;
     }
+    @include desktop{
+        margin-bottom: 60px;
+    }
+
 }
 
 .tittle {
-    margin-bottom: 42px;
     max-width: 232px;
     margin-left: 0;
     height: 100%;
@@ -33,7 +38,6 @@
     @include desktop {
         width: 100%;
         max-width: 504px;
-        margin-bottom: 54px;
     }
 }
 
@@ -43,19 +47,20 @@
     line-height: 1.22;
     text-transform: uppercase;
     color: ($white-color);
-    padding-bottom: 16px;
+
+    margin-bottom: 16px;
 
     @include tablet {
         font-size: 26px;
         line-height: 1.22;
-        padding-bottom: 9px;
+        margin-bottom: 9px;
     }
 
     @include desktop {
         font-weight: 400;
         font-size: 30px;
         line-height: 1.23;
-        padding-bottom: 14px;
+        margin-bottom: 14px;
     }
 
 }
@@ -80,18 +85,15 @@
 }
 
 .item {
-    margin-bottom: 38px;
-
+margin-top: 42px;
     @include tablet {
-        padding-top: 68px;
-        padding-bottom: 56px;
-        margin-right: 0px;
+        margin-top: 68px;
+        margin-left: auto;
     }
 
     @include desktop {
-        padding-bottom: 0px;
-        padding-top: 12px;
-        margin-bottom: 60px;
+        margin-top: 12px;
+        margin-left: auto;
     }
 }
 
@@ -117,7 +119,7 @@
 }
 
 .icons {
-    margin-bottom: 38px;
+    margin-bottom: 39px;
 }
 
 .icons__svg {
