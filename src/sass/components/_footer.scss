@@ -6,7 +6,6 @@
     @include tablet {
         padding-top: 40px;
     }
-
     @include desktop {
         padding-top: 120px;
     }
@@ -197,9 +196,3 @@
         padding-top: 14px;
         padding-bottom: 13px;
     }
-
-    @include desktop {
-        padding-top: 11px;
-        padding-bottom: 12px;
-    }
-}

@@ -140,13 +140,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 60px;
+        gap: 111px;
 
         text-align: center;
 
         width: 100%;
         height: 100vh;
-        padding-top: 100px;
+        padding-top: 60px;
 
         background-color: $main-color;
         z-index: 1;
@@ -176,6 +176,10 @@
 
 .mobile-menu.is-open {
     transform: translateX(0);
+
+    @media screen and (min-width: 768px) {
+        transform: translateX(-12px);
+    }
 }
 
 .sale-area {
@@ -374,6 +378,7 @@
         left: 18%;
     }
 
+
     @media screen and (min-width: 768px) {
         top: 8%;
         left: 42%;
@@ -403,11 +408,11 @@
     justify-content: space-between;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+ .image-header {
+     display: block;
+     max-width: 100%;
+     height: auto;
+ }
 
 @media screen and (max-width: 767px) {
     .button-modal-tablet {
@@ -460,7 +465,7 @@ img {
     .plate-image {
         position: absolute;
         left: 35px;
-        bottom: 14px;
+        top: 251px;
         display: block;
     }
 
@@ -493,7 +498,7 @@ img {
     }
 
     .mobile-menu {
-        margin-left: -32px;
+        // margin-left: -32px;
         padding-top: 70px;
     }
 }
@@ -545,7 +550,7 @@ img {
 
     .plate-image {
         left: 17px;
-        bottom: 65px;
+        top: 374px;
     }
 
     .logo {
