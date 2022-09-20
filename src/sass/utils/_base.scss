@@ -23,9 +23,10 @@ $third-font: 'Roboto', sans-serif;
   padding: 0 15px;
   margin: 0 auto;
 
+  padding: 0 20px;
+
   @include mobile {
     width: 480px;
-    padding: 0 20px;
   }
 
   @include tablet {
