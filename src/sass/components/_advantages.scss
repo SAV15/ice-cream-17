@@ -71,51 +71,6 @@
     }
   }
 
-  &-list__title {
-    font-family: $third-font;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $white-color;
-    display: inline-block;
-    margin-top: 16px;
-
-    @include tablet {
-      font-size: 48px;
-      line-height: 1.23;
-      margin-top: 32px;
-    }
-
-    @include desktop {
-      font-size: 58px;
-      line-height: 1.22;
-      margin-top: 40px;
-    }
-  }
-
-  &-list__text {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.7;
-    color: $white-color;
-    margin-top: 18px;
-
-    @include tablet {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.74;
-      margin-top: 16px;
-    }
-
-    @include desktop {
-      font-size: 16px;
-      line-height: 1.76;
-    }
-  }
-
   &-list__item:nth-child(1)::before {
     content: '';
     display: block;
@@ -176,6 +131,51 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/advantages/advantages-img3-mob-2x.png);
+    }
+  }
+
+  &-list__title {
+    font-family: $third-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $white-color;
+    display: inline-block;
+    margin-top: 16px;
+
+    @include tablet {
+      font-size: 48px;
+      line-height: 1.23;
+      margin-top: 32px;
+    }
+
+    @include desktop {
+      font-size: 58px;
+      line-height: 1.22;
+      margin-top: 40px;
+    }
+  }
+
+  &-list__text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: $white-color;
+    margin-top: 18px;
+
+    @include tablet {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.74;
+      margin-top: 16px;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.76;
     }
   }
 }
