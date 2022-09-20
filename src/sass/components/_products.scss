@@ -1,29 +1,49 @@
 .products {
   position: relative;
 
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    background-image: url(/src/images/products/item-background-tab.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 82px;
+  }
 }
+
 .backdrop-first {
   position: absolute;
-  top: -60px;
+  top: 0;
   width: 100%;
   height: 740px;
   z-index: -1;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .backdrop-second {
   position: absolute;
-  top: 640px;
+  top: 710px;
   width: 100%;
   height: 640px;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .backdrop-third {
   position: absolute;
-  top: 1290px;
+  top: 1330px;
   width: 100%;
-  height: 720px;
+  height: 700px;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .title-wrap {
@@ -37,6 +57,10 @@
   color: $black-color;
 
   margin-bottom: 148px;
+
+  @include tablet {
+    margin-bottom: 200px;
+  }
 }
 
 .products__pre-title {
@@ -45,6 +69,10 @@
   line-height: 1.22;
 
   margin-bottom: 12px;
+
+  @include tablet {
+    font-size: 22px;
+  }
 }
 
 .products-title {
@@ -52,10 +80,25 @@
   line-height: 1.27;
   letter-spacing: 0.04em;
   margin-top: 0;
+
+  @include tablet {
+    font-size: 34px;
+  }
+}
+
+.product-list {
+  @include tablet {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
 }
 
 .products-item:not(:last-child) {
   margin-bottom: 164px;
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .item-wrap {
@@ -80,6 +123,17 @@
     height: 211px;
     background-repeat: no-repeat;
     border-radius: 50%;
+
+    @include tablet {
+      width: 200px;
+      height: 208px;
+    }
+  }
+
+  @include tablet {
+    width: 224px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
 }
 
@@ -88,13 +142,22 @@
 
   &::before {
     content: ' ';
-    box-shadow: 0 15px 20px -5px rgba(10, 136, 23, 0.25);
+    box-shadow: 0 15px 20px -5px rgba(8, 102, 18, 0.25);
     background-image: url(/src/images/products/item-before1-mob.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(/src/images/products/item-before1-mob-2x.png);
       background-size: contain;
+    }
+    @include tablet {
+      background-image: url(/src/images/products/item-before1-tab.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/products/item-before1-tab-2x.png);
+        background-size: contain;
+      }
     }
   }
 }
@@ -112,6 +175,15 @@
       background-image: url(/src/images/products/item-before2-mob-2x.png);
       background-size: contain;
     }
+    @include tablet {
+      background-image: url(/src/images/products/item-before2-tab.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/products/item-before2-tab-2x.png);
+        background-size: contain;
+      }
+    }
   }
 }
 
@@ -128,10 +200,23 @@
       background-image: url(/src/images/products/item-before3-mob-2x.png);
       background-size: contain;
     }
+
+    @include tablet {
+      box-shadow: 0 15px 20px -5px rgba(137, 87, 58, 0.7);
+      background-image: url(/src/images/products/item-before3-tab.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/products/item-before3-tab-2x.png);
+        background-size: 206px 200px;
+        background-position: 50% 50%;
+      }
+    }
   }
 }
 
 .item-title {
+  font-family: $main-font;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -140,6 +225,11 @@
   text-transform: uppercase;
   color: $black-color;
   margin-bottom: 40px;
+
+  @include tablet {
+    font-size: 22px;
+    line-height: 1.23;
+  }
 }
 
 .item-text {
@@ -147,13 +237,14 @@
   line-height: 1.76;
   letter-spacing: 0.04em;
   margin-bottom: 90px;
+  height: 145px;
 }
 
 .product-btn {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   background-color: transparent;
   border: none;
-  width: 40px;
+  width: 48px;
   height: 20px;
 }
 
