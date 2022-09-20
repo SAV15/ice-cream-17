@@ -3,7 +3,7 @@
 }
 
 .header__container {
-    // position: relative;
+    position: relative;
     
     overflow: hidden;
     height: 502px;
@@ -146,7 +146,7 @@
 
         width: 100%;
         height: 100vh;
-        padding-top: 100px;
+        padding-top: 60px;
 
         background-color: $main-color;
         z-index: 1;
@@ -176,6 +176,10 @@
 
 .mobile-menu.is-open {
     transform: translateX(0);
+
+    @media screen and (min-width: 768px) {
+        transform: translateX(-12px);
+    }
 }
 
 .sale-area {
@@ -358,7 +362,7 @@
 
 .icecream-image {
     position: absolute;
-    top: 23.8%;
+    top: 43%;
     left: 11%;
     pointer-events: none;
 
@@ -374,25 +378,14 @@
         left: 18%;
     }
 
-    @media screen and (min-width: 540px) {
-        left: 20%;
-    }
-
-    @media screen and (min-width: 600px) {
-        left: 22%;
-    }
-
-    @media screen and (min-width: 670px) {
-        left: 24%;
-    }
 
     @media screen and (min-width: 768px) {
-        top: 3.5%;
+        top: 8%;
         left: 42%;
     }
 
     @media screen and (min-width: 1200px) {
-        top: 2.5%;
+        top: 4%;
         left: 45%;
     }
 }
@@ -415,7 +408,7 @@
     justify-content: space-between;
 }
 
-img {
+.image {
     display: block;
     max-width: 100%;
     height: auto;
@@ -506,7 +499,7 @@ img {
 
     .mobile-menu {
         // margin-left: -32px;
-        padding-top: 140px;
+        padding-top: 70px;
     }
 }
 
