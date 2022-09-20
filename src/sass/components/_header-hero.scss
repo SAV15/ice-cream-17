@@ -3,7 +3,7 @@
 }
 
 .header__container {
-    position: relative;
+    // position: relative;
     
     overflow: hidden;
     height: 502px;
@@ -140,7 +140,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 60px;
+        gap: 111px;
 
         text-align: center;
 
@@ -358,7 +358,7 @@
 
 .icecream-image {
     position: absolute;
-    top: 43%;
+    top: 23.8%;
     left: 11%;
     pointer-events: none;
 
@@ -374,13 +374,25 @@
         left: 18%;
     }
 
+    @media screen and (min-width: 540px) {
+        left: 20%;
+    }
+
+    @media screen and (min-width: 600px) {
+        left: 22%;
+    }
+
+    @media screen and (min-width: 670px) {
+        left: 24%;
+    }
+
     @media screen and (min-width: 768px) {
-        top: 8%;
+        top: 3.5%;
         left: 42%;
     }
 
     @media screen and (min-width: 1200px) {
-        top: 4%;
+        top: 2.5%;
         left: 45%;
     }
 }
@@ -460,7 +472,7 @@ img {
     .plate-image {
         position: absolute;
         left: 35px;
-        bottom: 14px;
+        top: 251px;
         display: block;
     }
 
@@ -493,8 +505,8 @@ img {
     }
 
     .mobile-menu {
-        margin-left: -32px;
-        padding-top: 70px;
+        // margin-left: -32px;
+        padding-top: 140px;
     }
 }
 
@@ -545,7 +557,7 @@ img {
 
     .plate-image {
         left: 17px;
-        bottom: 65px;
+        top: 374px;
     }
 
     .logo {
