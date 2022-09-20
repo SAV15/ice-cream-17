@@ -17,6 +17,12 @@
     background-size: cover;
     padding-bottom: 57px;
   }
+
+  .container {
+    @include desktop {
+      padding: 0 12px;
+    }
+  }
 }
 
 .backdrop-first {
@@ -115,7 +121,6 @@
 
   @include desktop {
     gap: 32px;
-    justify-content: space-between;
   }
 }
 
@@ -128,7 +133,7 @@
 
 .products-item {
   @include desktop {
-    width: calc((100% - 24px) / 3);
+    width: 370px;
   }
 }
 
