@@ -1,3 +1,8 @@
-include("./modal-loc.js");
+import './modal-loc'
+import './modal-buy'
+import './modal-fr'
+import './modal-ing'
 
-include("./modal-buy.js");
+
+
+
