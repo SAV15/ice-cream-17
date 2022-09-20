@@ -140,13 +140,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 111px;
+        gap: 60px;
 
         text-align: center;
 
         width: 100%;
         height: 100vh;
-        padding-top: 60px;
+        padding-top: 100px;
 
         background-color: $main-color;
         z-index: 1;
@@ -176,10 +176,6 @@
 
 .mobile-menu.is-open {
     transform: translateX(0);
-
-    @media screen and (min-width: 768px) {
-        transform: translateX(-12px);
-    }
 }
 
 .sale-area {
@@ -378,7 +374,6 @@
         left: 18%;
     }
 
-
     @media screen and (min-width: 768px) {
         top: 8%;
         left: 42%;
@@ -408,11 +403,11 @@
     justify-content: space-between;
 }
 
- .image-header {
-     display: block;
-     max-width: 100%;
-     height: auto;
- }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 @media screen and (max-width: 767px) {
     .button-modal-tablet {
@@ -465,7 +460,7 @@
     .plate-image {
         position: absolute;
         left: 35px;
-        top: 251px;
+        bottom: 14px;
         display: block;
     }
 
@@ -498,7 +493,7 @@
     }
 
     .mobile-menu {
-        // margin-left: -32px;
+        margin-left: -32px;
         padding-top: 70px;
     }
 }
@@ -550,7 +545,7 @@
 
     .plate-image {
         left: 17px;
-        top: 374px;
+        bottom: 65px;
     }
 
     .logo {
