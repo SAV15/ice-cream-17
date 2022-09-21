@@ -1,31 +1,33 @@
 <section class="gallery">
-  <picture>
-    <source
-      srcset="
-        /src/images/gallery/gallery-icecream-desktop.jpg    1x,
-        /src/images/gallery/gallery-icecream-desktop-2x.jpg 2x
-      "
-      media="(min-width:1200px)"
-    />
+  <div class="container wrap-gallery">
+    <picture>
+      <source
+        srcset="
+          /src/images/gallery/gallery-icecream-desktop.jpg    1x,
+          /src/images/gallery/gallery-icecream-desktop-2x.jpg 2x
+        "
+        media="(min-width:1200px)"
+      />
 
-    <source
-      srcset="
-        /src/images/gallery/gallery-icecream-tab.jpg    1x,
-        /src/images/gallery/gallery-icecream-tab-2x.jpg 2x
-      "
-      media="(min-width:768px)"
-    />
-    <source
-      srcset="
-        /src/images/gallery/gallery-icecream-mobile.jpg    1x,
-        /src/images/gallery/gallery-icecream-mobile-2x.jpg 2x
-      "
-      media="(max-width:767px)"
-    />
-    <img
-      class="gallery-img"
-      src="/src/images/gallery/gallery-icecream-mobile.jpg "
-      alt="ice-cream"
-    />
-  </picture>
+      <source
+        srcset="
+          /src/images/gallery/gallery-icecream-tab.jpg    1x,
+          /src/images/gallery/gallery-icecream-tab-2x.jpg 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          /src/images/gallery/gallery-icecream-mobile.jpg    1x,
+          /src/images/gallery/gallery-icecream-mobile-2x.jpg 2x
+        "
+        media="(max-width:767px)"
+      />
+      <img
+        class="gallery-img"
+        src="/src/images/gallery/gallery-icecream-mobile.jpg "
+        alt="ice-cream"
+      />
+    </picture>
+  </div>
 </section>
