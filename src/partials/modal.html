@@ -1,8 +1,9 @@
 <!-- <button type="button" class="" data-modal-loc-open>OPEN Loc</button> -->
-<button type="button" class="" data-modal-buy-open>OPEN buy</button>
-<button type="button" class="" data-modal-loc-open>OPEN loc</button>
-<button type="button" class="" data-modal-fr-open>OPEN fr</button>
-<button type="button" class="" data-modal-ing-open>OPEN ing</button>
+<button type="button" class="" data-modal-buy-open>OPEN buy HEADER</button>
+<button type="button" class="" data-modal-loc-open>OPEN loc Contacts</button>
+<button type="button" class="" data-modal-fr-open>OPEN fr Contacts</button>
+<button type="button" class="" data-modal-ing-open>OPEN ing Products</button>
+<button type="button" class="" data-modal-read-open>OPEN read About</button>
 <!-- Loc -->
 <div class="md-backdrop md-is-hidden" data-modal-loc>
   <div class="modal-loc">
@@ -172,7 +173,55 @@
         <use href="./images/svg/symbol-defs.svg#close"></use>
       </svg>
     </button>
+
     <p class="modal-ing__title">Chololate icecream</p>
+    
+     <picture class="modal-ing__img">
+        <source
+          srcset="
+          ./images/img-modal/ingredient-modal-icecrema-desk-1x-min.jpg 1x,
+          ./images/img-modal/ingredient-modal-icecrema-desk-1x-min.jpg 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="./images/img-modal/ingredient-modal-icecrema-tel-1x-min.jpg 1x,
+          ./images/img-modal/ingredient-modal-icecrema-tel-1x-min.jpg 2x
+          "
+          media="(max-width:767px)"
+        />
+        <img
+          srcset="
+            ./images/img-modal/ingredient-modal-icecrema-tel-1x-min.jpg 1x,
+          ./images/img-modal/ingredient-modal-icecrema-tel-1x-min.jpg 2x
+          "
+          alt="ingredient-icecrema"
+          width="132" height="138"
+          
+        />
+            </picture>
+
+    <ul class="modal-ing__weight">
+      <li class="modal-ing__circle">
+        <p class="modal-ing__number">320</p>
+        <p class="modal-ing__number-text">kcal</p>
+      </li>
+      <li class="modal-ing__circle">
+        <p class="modal-ing__number">4g</p>
+        <p class="modal-ing__number-text">Prote...</p>
+      </li>
+      <li class="modal-ing__circle">
+        <p class="modal-ing__number">8,2g</p>
+        <p class="modal-ing__number-text">Fats</p>
+      </li>
+      <li class="modal-ing__circle">
+        <p class="modal-ing__number">40,4g</p>
+        <p class="modal-ing__number-text">Carbs</p>
+      </li>
+    </ul>
+
+
+
     <p class="modal-ing__name">Ingredients</p>
     <ul class="modal-ing__list">
       <li class="modal-ing__name-item">
