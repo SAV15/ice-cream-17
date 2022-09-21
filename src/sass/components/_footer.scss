@@ -198,8 +198,14 @@
         padding-bottom: 13px;
     }
 
+
     @include desktop {
         padding-top: 11px;
         padding-bottom: 12px;
     }
+}
+
+.span__text{
+    text-align: center;
+    margin-left: 40px;
 }
