@@ -1,2 +1,0 @@
-("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("gJNvA",(function(e,o){(()=>{const e={openModalBtn:document.querySelector("[data-modal-loc-open]"),closeModalBtn:document.querySelector("[data-modal-loc-close]"),modal:document.querySelector("[data-modal-loc]")};function o(){e.modal.classList.toggle("md-is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})()}));
-//# sourceMappingURL=modal-loc.44b5c8c1.js.map
