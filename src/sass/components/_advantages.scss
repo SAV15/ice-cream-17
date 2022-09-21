@@ -49,11 +49,15 @@
 
     @include tablet {
       width: 152px;
+      width: calc((100% - 2 * 80px) / 3);
+      margin-right: 80px;
       margin-top: 0;
     }
 
     @include desktop {
       width: 368px;
+      width: calc((100% - 2 * 32px) / 3);
+      margin-right: 32px;
       margin-top: 0;
     }
   }
@@ -64,11 +68,17 @@
     }
   }
 
+
   // @include tablet {
   //   &-list__item:nth-child(3n) {
   //     // margin-right: 0;
   //   }
   // }
+  @include tablet {
+    &-list__item:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
 
   &-list__item:nth-child(1)::before {
     content: '';
