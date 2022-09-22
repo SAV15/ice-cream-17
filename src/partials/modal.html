@@ -1,11 +1,12 @@
 
-<button type="button" class="" data-modal-buy-open>OPEN buy HEADER</button>
-<!-- <button type="button" class="" data-modal-loc-open>OPEN loc Contacts</button>
-<button type="button" class="" data-modal-fr-open>OPEN fr Contacts</button>
-<button type="button" class="" data-modal-ing-open>OPEN ing Products</button>
-<button type="button" class="" data-modal-read-open>OPEN read About</button> -->
+<!-- <button type="button" class="" data-modal-buy-open>OPEN buy HEADER</button>  -->
+<!-- <button type="button" class="" data-modal-loc-open>OPEN loc Contacts</button> -->
+<!-- <button type="button" class="" data-modal-fr-open>OPEN fr Contacts</button> -->
+<!-- <button type="button" class="" data-modal-ing-open>OPEN ing Products</button> -->
+<!-- <button type="button" class="" data-modal-read-open>OPEN read About</button> -->
+
+
 <!-- Loc -->
-<!-- <button type="button" class="" data-modal-loc-open>OPEN Loc</button> --> -->
 <div class="md-backdrop md-is-hidden" data-modal-loc>
   <div class="modal-loc">
     <button type="modal-btn" class="modal-btn__close" data-modal-loc-close>
@@ -31,8 +32,8 @@
       />
       <img
         srcset="
-          ./images/img-modal/location-modal-tel-1x-min.jpg 1x,
-          ./images/img-modal/location-modal-tel-2x-min.jpg 2x
+          ./images/img-modal/location-modal-desk-1x-min.jpg 1x,
+          ./images/img-modal/location-modal-desk-2x-min.jpg 2x
         "
         alt="map"
       />
@@ -43,13 +44,14 @@
   </div>
 </div>
 
-
+<!------- READ ------->
 
 <div class="md-backdrop md-is-hidden" data-modal-read>
   <div class="modal-read">
     <button type="modal-btn" class="modal-btn__close" data-modal-read-close>
-
-
+      <svg class="modal__x" width="16" height="16">
+        <use href="./images/svg/symbol-defs.svg#close"></use>
+      </svg>
     </button>
     <p class="modal__title">How it’s made?</p>
     <iframe
@@ -70,8 +72,9 @@
   </div>
 </div>
 
-<!-- <script src="./js/modal-loc.js"></script> -->
-<!-- <script src="./js/modal-read.js"></script> -->
+
+
+<!-- -----BUY---- -->
  <div class="md-backdrop md-is-hidden" data-modal-buy>
   <div class="modal-buy">
     <button type="modal-btn" class="modal-btn__close" data-modal-buy-close>
@@ -81,7 +84,7 @@
 <p class="modal__title">Buy now</p>
     
     <form class="modal-checkbox">
-      <ul>
+      <ul class="modal-checkbox__card">
         <li class="modal-checkbox__first ">
           <label class="modal-checkbox__field">
             
@@ -231,6 +234,9 @@
     <button type="submit" class="btn-send">Submit</button>
   </div>
 </div>
+
+
+
 <!-- Франшиза -->
 <div class="md-backdrop md-is-hidden" data-modal-fr>
     <div class="modalfr">
@@ -395,4 +401,4 @@
   </div>
 </div>
 
-<!-- <script src="./js/modal-loc.js"></script>
+
