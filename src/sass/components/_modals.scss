@@ -29,8 +29,16 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 480px) {
+    width: 280px;
+  }
+ 
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
 
-  @media screen and (min-width: 1200px) {
+
+  @media screen and (min-width: 768px) {
     width: 568px;
     height: 458px;
     padding: 30px 60px;
@@ -69,7 +77,7 @@
   margin-bottom: 20px;
   margin-top: 0px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 32px;
     font-size: 20px;
     line-height: 1.4;
@@ -93,13 +101,17 @@
   border-radius: 10px;
   max-width: 135px;
   margin-top: 24px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-top: 32px;
     font-size: 14px;
     line-height: 1.2;
     max-width: 145px;
   }
 }
+
+
+
+
 .modal-read {
   position: absolute;
   padding: 28px;
@@ -113,7 +125,7 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     width: 568px;
     height: 450px;
     padding: 32px 60px;
@@ -128,7 +140,7 @@
   line-height: 1.4;
   color: #131313;
   margin-top: 20px;
-  @include desktop {
+  @include tablet {
     margin-top: 32px;
   }
 }
@@ -136,7 +148,7 @@
 .video {
   width: 224px;
   height: 199px;
-  @include desktop {
+  @include tablet {
     width: 448px;
     height: 205px;
   }
@@ -144,15 +156,18 @@
 
 // ---Buy------
 
-// .modal-checkbox {
-//   //   margin-top: 90px;
-// }
+.modal-checkbox__card {
+  @include tablet {
+      display: flex;
+      gap: 32px;
+    }
+}
 .modal-buy {
   position: absolute;
   padding: 28px;
   width: calc(100% - 40px);
 
-  // min-height: 365px;
+  
   background-color: #fcfcfc;
   max-height: 986px;
   border: 2px solid #f8d24e;
@@ -161,7 +176,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 480px) {
+  @include mobile {
     width: 280px;
   }
 
@@ -288,6 +303,7 @@
 
 .modal-checkbox__first {
   margin-bottom: 20px;
+  
 }
 
 .modal-checkbox__field {
