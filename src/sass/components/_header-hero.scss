@@ -1,616 +1,616 @@
 .header {
-    background-color: $main-color;
+  background-color: $main-color;
 }
 
 .header__container {
-    position: relative;
-    
-    overflow: hidden;
-    height: 502px;
+  position: relative;
 
-    background-image: url(../images/svg/hero-header-image/bg-image-mobile_x1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
+  overflow: hidden;
+  height: 502px;
 
-    @media (min-device-pixel-ratio: 2),
+  background-image: url(../images/svg/hero-header-image/bg-image-mobile_x1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/svg/hero-header-image/bg-image-mobile_x2.png);
-    }
+  }
 }
 
 .logo {
-    position: absolute;
-    top: 12px;
-    left: 20px;
-    z-index: 2;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  z-index: 2;
 }
 
 .menu-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    width: 32px;
-    height: 32px;
-    background-color: transparent;
-    border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border-color: transparent;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    fill: $white-color;
+  fill: $white-color;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover, &:focus {
-        fill: $how-its-made-yellow1;
-    }
+  &:hover,
+  &:focus {
+    fill: $how-its-made-yellow1;
+  }
 }
 
-.button-modal-mobile, .button-modal-tablet {
-    display: flex;
+.button-modal-mobile,
+.button-modal-tablet {
+  display: flex;
 
-    align-items: center;
-    justify-content: center;
-    width: 152px;
-    height: 42px;
+  align-items: center;
+  justify-content: center;
+  width: 152px;
+  height: 42px;
 
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
 
-    color: $black-color;
+  color: $black-color;
 
-    background-color: $how-its-made-yellow1;
-    border-color: transparent;
-    border-radius: 10px;
+  background-color: $how-its-made-yellow1;
+  border-color: transparent;
+  border-radius: 10px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover {
-        background-color: $green-color;
-        border: 1px solid $black-color;
-    }
+  &:hover {
+    background-color: $green-color;
+    border: 1px solid $black-color;
+  }
 
-    &:focus {
-        background-color: $green-color;
-        color: $white-color;
-    }
+  &:focus {
+    background-color: $green-color;
+    color: $white-color;
+  }
 }
 
 .button-modal__icon {
-    fill: $black-color;
+  fill: $black-color;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .button-modal-mobile:focus &,  .button-modal-tablet:focus &{
-        fill: $white-color;
-    }
+  .button-modal-mobile:focus &,
+  .button-modal-tablet:focus & {
+    fill: $white-color;
+  }
 }
 
 .button-modal__text {
-    margin-right: 7px;
+  margin-right: 7px;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-text {
-    margin-top: 110px;
-    margin-bottom: 32px;
-    // max-width: 250px;
+  margin-top: 110px;
+  margin-bottom: 32px;
+  // max-width: 250px;
 
-    font-family: $secondary-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 1.27;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    color: $white-color;
+  color: $white-color;
 }
 
 .main-text--bigger {
-    font-size: 34px;
+  font-size: 34px;
 }
 
 .menu-button.is-open .icon-menu {
-    display: none;
+  display: none;
 }
 
 .menu-button.is-open .icon-cross {
-    display: block;
+  display: block;
 }
 
 .menu-button .icon-cross {
-    display: none;
+  display: none;
 }
 
 .mobile-menu {
-    margin-left: -20px;
+  margin-left: -20px;
 
-    @media screen and (max-width: 1199px) {
-        position: absolute;
-        top: 0;
+  @media screen and (max-width: 1199px) {
+    position: absolute;
+    top: 0;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 111px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
 
-        text-align: center;
+    text-align: center;
 
-        width: 100%;
-        height: 100vh;
-        padding-top: 60px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
 
-        background-color: $main-color;
-        z-index: 1;
+    background-color: $main-color;
+    z-index: 1;
 
-        transform: translateX(100%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .mobile-menu__text {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.21;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.21;
 
-    color: $white-color;
+  color: $white-color;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover, &:focus {
-        color: $black-color;
-    }
+  &:hover,
+  &:focus {
+    color: $black-color;
+  }
 }
 
 .mobile-menu__item:not(:last-child) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .mobile-menu.is-open {
-    transform: translateX(0);
-
-    @media screen and (min-width: 768px) {
-        transform: translateX(-12px);
-    }
+  transform: translateX(0);
 }
 
 .sale-area {
-    display: none;
-    margin-top: 95px;
+  display: none;
+  margin-top: 95px;
 }
 
 .sale-area:not(:last-child) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .sale-area__number {
-    font-weight: 900;
-    font-size: 28px;
-    line-height: 1.21;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    color: $black-color;
+  color: $black-color;
 }
 
 .sale-area__text {
-    font-size: 8px;
-    line-height: 1.25;
+  font-size: 8px;
+  line-height: 1.25;
 
-    color: $white-color;
+  color: $white-color;
 }
 
 .sale-area__item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
 }
 
 .sale-area__item:not(:last-child) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .plate-image {
-    display: none;
+  display: none;
 }
 
 .hero-description {
-    display: none;
+  display: none;
 
-    margin-left: 190px;
-    margin-top: 56px;
+  margin-left: 190px;
+  margin-top: 56px;
 
-    width: 160px;
+  width: 160px;
 
-    font-size: 12px;
-    line-height: 1.42;
+  font-size: 12px;
+  line-height: 1.42;
 
-    color: $white-color;
+  color: $white-color;
 }
 
 .hero-description__icon {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .hero-description__icon--default,
 .hero-description__icon--hover,
-.hero-description__icon--focus{
-    fill: $white-color;
+.hero-description__icon--focus {
+  fill: $white-color;
 }
 
 .hero-description__icon--hover {
-    opacity: 0;
+  opacity: 0;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-description__icon--focus {
-    opacity: 0;
+  opacity: 0;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-description:hover .hero-description__icon--hover{
-    opacity: 1;
+.hero-description:hover .hero-description__icon--hover {
+  opacity: 1;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-description:hover .hero-description__icon--default{
-    opacity: 0;
+.hero-description:hover .hero-description__icon--default {
+  opacity: 0;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-description:focus .hero-description__icon--hover{
-    opacity: 0;
+.hero-description:focus .hero-description__icon--hover {
+  opacity: 0;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-description:focus .hero-description__icon--default{
-    opacity: 0;
+.hero-description:focus .hero-description__icon--default {
+  opacity: 0;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-description:focus .hero-description__icon--focus{
-    opacity: 1;
+.hero-description:focus .hero-description__icon--focus {
+  opacity: 1;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product {
-    display: flex;
-    gap: 8px;
-    align-items: center;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .product__button1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 62px;
-    height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 24px;
 
-    background-color: inherit;
-    border: 2px solid $how-its-made-yellow1;
-    border-radius: 8px;
+  background-color: inherit;
+  border: 2px solid $how-its-made-yellow1;
+  border-radius: 8px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover, &:focus {
-        border: 2px solid $green-color;
-    }
+  &:hover,
+  &:focus {
+    border: 2px solid $green-color;
+  }
 }
 
 .product__button1--text {
-    font-weight: 600;
-    font-size: 8px;
-    line-height: 1.25;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
 
-    color: $black-color;
+  color: $black-color;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .product__button1:focus & {
-        color: $white-color;
-    }
+  .product__button1:focus & {
+    color: $white-color;
+  }
 }
 
 .product__button2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    background-color: inherit;
+  background-color: inherit;
 
-    border-color: transparent;
+  border-color: transparent;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .product__button2--text {
-    font-weight: 600;
-    font-size: 8px;
-    line-height: 1.25;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
 
-    text-decoration-line: underline;
-    color: $how-its-made-yellow1;
+  text-decoration-line: underline;
+  color: $how-its-made-yellow1;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .product__button2:hover & {
-        color: $green-color;
-    }
+  .product__button2:hover & {
+    color: $green-color;
+  }
 
-    .product__button2:focus & {
-        color: $white-color;
-    }
+  .product__button2:focus & {
+    color: $white-color;
+  }
 }
 
 .icecream-image {
-    position: absolute;
-    top: 43%;
-    left: 11%;
-    pointer-events: none;
+  position: absolute;
+  top: 43%;
+  left: 11%;
+  pointer-events: none;
 
-    @media screen and (min-width: 380px) {
-        left: 15%;
-    }
+  @media screen and (min-width: 380px) {
+    left: 15%;
+  }
 
-    @media screen and (min-width: 420px) {
-        left: 16%;
-    }
+  @media screen and (min-width: 420px) {
+    left: 16%;
+  }
 
-    @media screen and (min-width: 480px) {
-        left: 18%;
-    }
+  @media screen and (min-width: 480px) {
+    left: 18%;
+  }
 
+  @media screen and (min-width: 768px) {
+    top: 8%;
+    left: 42%;
+  }
 
-    @media screen and (min-width: 768px) {
-        top: 8%;
-        left: 42%;
-    }
-
-    @media screen and (min-width: 1200px) {
-        top: 4%;
-        left: 45%;
-    }
+  @media screen and (min-width: 1200px) {
+    top: 4%;
+    left: 45%;
+  }
 }
 
 .button-container {
-    position: absolute;
-    top: 16px;
-    right: 20px;
+  position: absolute;
+  top: 16px;
+  right: 20px;
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
 
-    z-index: 2;
+  z-index: 2;
 }
 
 .main-text-box {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
- .image-header {
-     display: block;
-     max-width: 100%;
-     height: auto;
- }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 @media screen and (max-width: 767px) {
-    .button-modal-tablet {
-        display: none;
-    }
+  .button-modal-tablet {
+    display: none;
+  }
 
-    .main-text {
-        max-width: 250px;
-    }
+  .main-text {
+    max-width: 250px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .button-modal-mobile {
-        display: none;
+  .button-modal-mobile {
+    display: none;
+  }
+
+  .logo {
+    top: 20px;
+    left: 32px;
+  }
+
+  .header__container {
+    height: 415px;
+  }
+
+  .main-text {
+    max-width: 183px;
+
+    margin-bottom: 20px;
+    margin-top: 105px;
+
+    font-size: 18px;
+    line-height: 1.27;
+  }
+
+  .main-text--bigger {
+    font-size: 24px;
+    line-height: 0.54;
+  }
+
+  .sale-area {
+    display: block;
+  }
+
+  .hero-description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plate-image {
+    position: absolute;
+    left: 35px;
+    bottom: 14px;
+    display: block;
+  }
+
+  .header__container {
+    background-image: url(../images/svg/hero-header-image/bg-image-tablet_x1.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/svg/hero-header-image/bg-image-tablet_x2.png);
     }
+  }
 
-    .logo {
-        top: 20px;
-        left: 32px;
-    }
-
-    .header__container {
-        height: 415px;
-    }
-
-    .main-text {
-        max-width: 183px;
-
-        margin-bottom: 20px;
-        margin-top: 105px;
-
-        font-size: 18px;
-        line-height: 1.27;
-    }
-
-    .main-text--bigger {
-        font-size: 24px;
-        line-height: 0.54;
-    }
-
-    .sale-area {
-        display: block;
-    }
-
-    .hero-description {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .plate-image {
-        position: absolute;
-        left: 35px;
-        top: 251px;
-        display: block;
-    }
-
-    .header__container {
-        background-image: url(../images/svg/hero-header-image/bg-image-tablet_x1.png);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/svg/hero-header-image/bg-image-tablet_x2.png);
-        }
-    }
-
-    .mobile-menu__text {
-        font-size: 48px;
-        line-height: 1.23;
-    }
+  .mobile-menu__text {
+    font-size: 48px;
+    line-height: 1.23;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .button-container {
-        top: 25px;
-        right: 32px;
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  .button-container {
+    top: 25px;
+    right: 32px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-    .mobile-menu.is-open + .button-container {
-        transform: translateX(86%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  .mobile-menu.is-open + .button-container {
+    transform: translateX(86%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-    .mobile-menu {
-        // margin-left: -32px;
-        padding-top: 70px;
-    }
+  .mobile-menu {
+    margin-left: -32px;
+    padding-top: 70px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .menu-button {
-        display: none;
+  .menu-button {
+    display: none;
+  }
+
+  .button-container {
+    right: 16px;
+    top: 28px;
+  }
+
+  .header__container {
+    height: 664px;
+
+    background-image: url(../images/svg/hero-header-image/bg-image-desktop_x1.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/svg/hero-header-image/bg-image-desktop_x2.png);
     }
+  }
 
-    .button-container {
-        right: 16px;
-        top: 28px;
+  .mobile-menu__nav {
+    display: flex;
+    gap: 27px;
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-content: center;
+
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .mobile-menu__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+
+    &:hover {
+      color: $how-its-made-yellow1;
     }
+  }
 
-    .header__container {
-        height: 664px;
+  .plate-image {
+    left: 17px;
+    bottom: 65px;
+  }
 
-        background-image: url(../images/svg/hero-header-image/bg-image-desktop_x1.png);
+  .logo {
+    top: 8px;
+    left: 16px;
+  }
 
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/svg/hero-header-image/bg-image-desktop_x2.png);
-        }
-    }
+  .main-text {
+    max-width: 370px;
+    margin-top: 45px;
+    margin-bottom: 28px;
+    font-size: 38px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+  }
 
-    .mobile-menu__nav {
-        display: flex;
-        gap: 27px;
-    }
+  .main-text--bigger {
+    font-size: 38px;
+  }
 
-    .mobile-menu {
-        display: flex;
-        justify-content: center;
+  .product {
+    gap: 34px;
+  }
 
-        margin-left: 0;
-        margin-top: 40px;
-    }
+  .product__button1 {
+    width: 134px;
+    height: 42px;
+  }
 
-    .mobile-menu__text {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;
+  .product__button1--text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+  }
 
-        &:hover {
-            color: $how-its-made-yellow1;
-        }
-    }
+  .product__button2--text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+  }
 
-    .plate-image {
-        left: 17px;
-        top: 374px;
-    }
+  .hero-description {
+    margin-left: 255px;
+    margin-top: 109px;
 
-    .logo {
-        top: 8px;
-        left: 16px;
-    }
+    width: 200px;
 
-    .main-text {
-        max-width: 370px;
-        margin-top: 45px;
-        margin-bottom: 28px;
-        font-size: 38px;
-        line-height: 1.26;
-        letter-spacing: 0.04em;
-    }
+    font-size: 14px;
+  }
 
-    .main-text--bigger {
-        font-size: 38px;
-    }
+  .sale-area {
+    margin-top: 56px;
+  }
 
-    .product {
-        gap: 34px;
-    }
+  .sale-area__text {
+    font-size: 14px;
+  }
 
-    .product__button1 {
-        width: 134px;
-        height: 42px;
-    }
-
-    .product__button1--text {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.28;
-    }
-
-    .product__button2--text {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.21;
-    }
-
-    .hero-description {
-        margin-left: 255px;
-        margin-top: 109px;
-
-        width: 200px;
-
-        font-size: 14px;
-    }
-
-    .sale-area {
-        margin-top: 56px;
-    }
-
-    .sale-area__text {
-        font-size: 14px;
-    }
-
-    .sale-area__number {
-        font-size: 46px;
-        line-height: 1.21;
-    }
+  .sale-area__number {
+    font-size: 46px;
+    line-height: 1.21;
+  }
 }

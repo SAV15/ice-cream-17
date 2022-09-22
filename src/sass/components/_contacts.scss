@@ -1,132 +1,132 @@
 .contacts {
-    background-color: $main-color;
+  background-color: $main-color;
 }
 
-.container {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-}
+// .container {
+//     width: 100%;
+//     padding-left: 20px;
+//     padding-right: 20px;
+//     margin: 0 auto;
+// }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .contacts__wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .contacts__category {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
-    color: $black-color;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $black-color;
 }
 
 .contacts__title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
-    color: $black-color;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $black-color;
 }
 
 .contacts__text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #ABABAB;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ababab;
 }
 
 .contacts__maps {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
-    margin-top: 8px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  margin-top: 8px;
 
-    letter-spacing: 0.04em;
+  letter-spacing: 0.04em;
 
-    color: $galery-brown-color;
+  color: $galery-brown-color;
 }
 
 .contacts__maps:hover,
 .contacts__maps:focus {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .contacts__position {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 32px;
 }
 
 .contacts__address::after {
-    content : '';
-    width: 100%;
-    max-width: 216px;
-    border: 1px solid #E1E1E1;
-    margin-top: 24px;
-    @include tablet {
-        max-width: 176px;
-        margin-top: 32px;
-    }
-    @include desktop {
-        max-width: 288px;
-    }
+  content: '';
+  width: 100%;
+  max-width: 216px;
+  border: 1px solid #e1e1e1;
+  margin-top: 24px;
+  @include tablet {
+    max-width: 176px;
+    margin-top: 32px;
+  }
+  @include desktop {
+    max-width: 288px;
+  }
 }
 
 .contacts__connect::before {
-    content: '';
-    width: 100%;
-    max-width: 216px;
-    border: 1px solid #E1E1E1;
-    margin-bottom: 24px;
+  content: '';
+  width: 100%;
+  max-width: 216px;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 24px;
 
-    @include tablet {
-        max-width: 176px;
-        margin-bottom: 32px;
-    }
+  @include tablet {
+    max-width: 176px;
+    margin-bottom: 32px;
+  }
 
-    @include desktop {
-        max-width: 288px;
-    }
+  @include desktop {
+    max-width: 288px;
+  }
 }
 
 .contacts__connect {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .connect-text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
-    color: $black-color;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $black-color;
 }
 
 // .connect:hover,
@@ -136,221 +136,220 @@
 // }
 
 .title-margin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    background: $how-its-made-yellow1;
-    border-radius: 4px;
-    width: 80px;
-    height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background: $how-its-made-yellow1;
+  border-radius: 4px;
+  width: 80px;
+  height: 16px;
 }
 
 .title-margin-child {
-    width: 130px;
+  width: 130px;
 }
 
 .contacts__box {
-    padding: 40px 32px;
-    width: 100%;
-    background: $white-color;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
+  padding: 40px 32px;
+  width: 100%;
+  background: $white-color;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
 }
 
 .contacts__address {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .text-margin {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .contacts__btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
 }
 
 .contacts__btn-location {
-    width: 196px;
-    height: 42px;
-    border: 2px solid $how-its-made-yellow1;
-    border-radius: 10px;
-    background: $main-color;
+  width: 196px;
+  height: 42px;
+  border: 2px solid $how-its-made-yellow1;
+  border-radius: 10px;
+  background: $main-color;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
-    color: $black-color;
-    background: $how-its-made-yellow1;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $black-color;
+  background: $how-its-made-yellow1;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .contacts__btn-location:hover {
-    background: $green-color;
+  background: $green-color;
 }
 
 .contacts__btn-location:focus {
-    background: $green-color;
-    color: $white-color;
+  background: $green-color;
+  color: $white-color;
 }
 
 .contacts__btn-location:disabled {
-    background: #ABABAB;
+  background: #ababab;
 }
 
 .contacts__btn-franchise {
-    width: 196px;
-    height: 42px;
-    border: 2px solid $how-its-made-yellow1;
-    border-radius: 10px;
-    background: $main-color;
+  width: 196px;
+  height: 42px;
+  border: 2px solid $how-its-made-yellow1;
+  border-radius: 10px;
+  background: $main-color;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
-    color: $black-color;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $black-color;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
 }
 
 .contacts__btn-franchise:hover {
-    border: 2px solid $green-color;
+  border: 2px solid $green-color;
 }
 
 .contacts__btn-franchise:focus {
-    border: 2px solid $green-color;
-    color: $white-color;
+  border: 2px solid $green-color;
+  color: $white-color;
 }
 
 .contacts__btn-franchise:disabled {
-    border: 2px solid #ABABAB;
+  border: 2px solid #ababab;
 }
 
 .contacts__btn-franchise:focus .contacts__btn-svg,
 .contacts__btn-location:focus .contacts__btn-svg {
-    fill: $white-color;
+  fill: $white-color;
 }
 
-
 @include mobile {
-    .contacts__box {
-        width: 440px;
-    }
+  .contacts__box {
+    width: 440px;
+  }
 }
 
 @include tablet {
-    .container {
-        width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
-    .contacts__box {
-        width: calc((100% - 32px) / 3);
-        padding: 40px 24px;
-    }
+  .contacts__box {
+    width: calc((100% - 32px) / 3);
+    padding: 40px 24px;
+  }
 
-    .contacts__wrap {
-        gap: 32px;
-    }
+  .contacts__wrap {
+    gap: 32px;
+  }
 
-    .contacts__position {
-        gap: 16px;
-        margin-bottom: 60px;
-    }
+  .contacts__position {
+    gap: 16px;
+    margin-bottom: 60px;
+  }
 
-    .text-margin {
-        margin-bottom: 12px;
-    }
+  .text-margin {
+    margin-bottom: 12px;
+  }
 
-    .contacts__btn {
-        flex-direction: row;
-    }
+  .contacts__btn {
+    flex-direction: row;
+  }
 
-    .contacts__category {
-        font-size: 16px;
-    }
+  .contacts__category {
+    font-size: 16px;
+  }
 
-    .title-margin {
-        width: 73px;
-        height: 28px;
-    }
+  .title-margin {
+    width: 73px;
+    height: 28px;
+  }
 
-    .title-margin-child {
-        width: 138px;
-    }
+  .title-margin-child {
+    width: 138px;
+  }
 
-    .title-margin {
-        margin-bottom: 32px;
-    }
+  .title-margin {
+    margin-bottom: 32px;
+  }
 
-    .contacts__title {
-        font-size: 14px;
-    }
+  .contacts__title {
+    font-size: 14px;
+  }
 
-    .contacts__maps {
-        margin-top: 12px;
-        font-size: 14px;
-    }
+  .contacts__maps {
+    margin-top: 12px;
+    font-size: 14px;
+  }
 
-    .contacts__text {
-        font-size: 14px;
-    }
+  .contacts__text {
+    font-size: 14px;
+  }
 
-    .connect-text {
-        font-size: 14px;
-    }
+  .connect-text {
+    font-size: 14px;
+  }
 }
 
 @include desktop {
-    .container {
-        width: 1200px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
-    .contacts__box {
-        width: calc((100% - 64px) / 3);
-        padding: 40px 40px;
-    }
+  .contacts__box {
+    width: calc((100% - 64px) / 3);
+    padding: 40px 40px;
+  }
 
-    .contacts__position {
-        gap: 32px;
-        margin-bottom: 64px;
-    }
+  .contacts__position {
+    gap: 32px;
+    margin-bottom: 64px;
+  }
 
-    .contacts__title {
-        font-size: 16px;
-    }
+  .contacts__title {
+    font-size: 16px;
+  }
 
-    .contacts__maps {
-        margin-top: 8px;
-        font-size: 16px;
-    }
+  .contacts__maps {
+    margin-top: 8px;
+    font-size: 16px;
+  }
 
-    .contacts__text {
-        font-size: 16px;
-    }
+  .contacts__text {
+    font-size: 16px;
+  }
 
-    .connect-text {
-        font-size: 16px;
-    }
+  .connect-text {
+    font-size: 16px;
+  }
 }
