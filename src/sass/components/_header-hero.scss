@@ -180,6 +180,8 @@
 
 .mobile-menu.is-open {
   transform: translateX(0);
+  height: 1024px;
+  z-index: 1;
 }
 
 .sale-area {
