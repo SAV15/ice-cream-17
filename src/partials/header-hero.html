@@ -1,35 +1,57 @@
-<header class="header">
-  <div class="container header__container">
-    <a class="logo link" href="#">
-      <img
-        srcset="
-          ./images/svg/hero-header-image/logo-x1.png    41w,
-          ./images/svg/hero-header-image/logo-x2.png    81w,
-          ./images/svg/hero-header-image/t-logo-x1.png  48w,
-          ./images/svg/hero-header-image/t-logo-x2.png  96w,
-          ./images/svg/hero-header-image/d-logo-x1.png  60w,
-          ./images/svg/hero-header-image/d-logo-x2.png 120w
-        "
-        sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, 41px"
-        src="./images/svg/hero-header-image/logo-x1.png"
-        alt="logo-image"
-      />
-    </a>
-    <div class="mobile-menu" data-menu>
-      <nav>
-        <ul class="mobile-menu__nav list">
-          <li class="mobile-menu__item">
-            <a class="link mobile-menu__text" href="">Home</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="link mobile-menu__text" href="">How it's made</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="link mobile-menu__text" href="">Our products</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="link mobile-menu__text" href="">Contact</a>
-          </li>
+<header class="header" id="header">
+    <div class="container header__container">
+        <a class="logo link" href="#">
+            <img srcset="./images/svg/hero-header-image/logo-x1.png 41w,
+                ./images/svg/hero-header-image/logo-x2.png 81w,
+                ./images/svg/hero-header-image/t-logo-x1.png 48w,
+                ./images/svg/hero-header-image/t-logo-x2.png 96w,
+                ./images/svg/hero-header-image/d-logo-x1.png 60w,
+                ./images/svg/hero-header-image/d-logo-x2.png 120w"
+                sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, 41px"
+                src="./images/svg/hero-header-image/logo-x1.png" alt="logo-image">
+        </a>
+        <div class="mobile-menu" data-menu>
+            <nav>
+                <ul class="mobile-menu__nav list">
+                    <li class="mobile-menu__item"><a class="link mobile-menu__text" href="#header">Home</a></li>
+                    <li class="mobile-menu__item"><a class="link mobile-menu__text" href="#about">How it's made</a></li>
+                    <li class="mobile-menu__item"><a class="link mobile-menu__text" href="#products">Our products</a></li>
+                    <li class="mobile-menu__item"><a class="link mobile-menu__text" href="#contacts">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="button-modal-mobile" type="button" data-modal-buy-open><span class="button-modal__text">Buy now</span>
+                <svg width="12" height="12">
+                    <use class="button-modal__icon" href="./images/svg/symbol-defs.svg#button-arrow"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="button-container">
+            <button class="menu-button" type="button" data-menu-button>
+                <svg width="32" height="32">
+                    <use class="icon-menu" href="./images/svg/symbol-defs.svg#burger-menu"></use>
+                    <use class="icon-cross" href="./images/svg/symbol-defs.svg#cross-header"></use>
+                </svg>
+            </button>
+            <button class="button-modal-tablet" type="button" data-modal-buy-open><span class="button-modal__text">Buy now</span>
+                <svg width="12" height="12">
+                    <use class="button-modal__icon" href="./images/svg/symbol-defs.svg#button-arrow"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="main-text-box">
+            <h1 class="main-text">Ice cream made with <span class="main-text--bigger">passion</span></h1>
+            <ul class="sale-area list">
+                <li class="sale-area__item"><span class="sale-area__number">16</span><span
+                        class="sale-area__text">cafes</span></li>
+                <li class="sale-area__item"><span class="sale-area__number">23</span><span class="sale-area__text">food
+                        trucks</span></li>
+            </ul>
+        </div>
+        <ul class="product list">
+            <li><a class="product__button1" type="button" href="#products"><span
+                        class="product__button1--text">Products</span></a></li>
+            <li><a class="product__button2" type="button" href="#about"><span class="product__button2--text">How it's
+                        made</span></a></li>
         </ul>
       </nav>
       <button class="button-modal-mobile" type="button" data-modal-buy-open>
