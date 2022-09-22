@@ -12,11 +12,11 @@
 }
 
 .advantages {
-  padding: 42px 0 60px 0;
+  padding: 0 0 60px;
   background-color: #84a178;
 
   @include tablet {
-    padding: 48px 0 204px 0;
+    padding: 0 0 204px;
 
     &-list {
       display: flex;
@@ -26,7 +26,7 @@
   }
 
   @include desktop {
-    padding: 60px 0 180px 0;
+    padding: 0 0 180px;
   }
 
   &-container {
@@ -67,7 +67,6 @@
       margin-top: 28px;
     }
   }
-
 
   // @include tablet {
   //   &-list__item:nth-child(3n) {
