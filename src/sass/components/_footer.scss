@@ -105,6 +105,13 @@
     gap: 28px;
 
     justify-content: end;
+    margin-bottom: 38px;
+@include tablet {
+    margin-bottom: 39px;
+}
+@include desktop {
+    margin-bottom: 40px;
+}
 }
 
 .footer__icons-link {
@@ -118,18 +125,6 @@
     @include tablet {
         width: 34px;
         height: 34px;
-    }
-}
-
-.footer__icons {
-    margin-bottom: 38px;
-
-    @include tablet {
-        margin-bottom: 39px;
-    }
-
-    @include desktop {
-        margin-bottom: 40px;
     }
 }
 
